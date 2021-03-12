@@ -1,0 +1,8 @@
+.custom-img {
+  height: 95vh;
+  object-fit: cover;
+}
+
+#home {
+  padding-bottom: 0px;
+}

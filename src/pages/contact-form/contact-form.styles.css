@@ -1,0 +1,14 @@
+#youtube-btn {
+  border-color: #f83f37;
+  color: #f83f37;
+}
+#youtube-btn:hover {
+  background-color: #f83f37;
+  color: #ffffff;
+}
+.glow {
+  color: #fff;
+
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+    0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
