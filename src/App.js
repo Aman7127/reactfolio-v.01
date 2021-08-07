@@ -40,10 +40,14 @@ const App = () => {
        <div>
 
        <Parallax
-        /*blur={{ min: -5, max: 5 }}*/
+        blur={{ min: -2, max: 2 }}
         bgImage={background}
         bgImageAlt="parallax"
-        strength={850}
+        bgImageSize="100*100"
+        
+      
+            
+        
     >
           <Container className="container-box rounded">
               <Fade left>
@@ -51,13 +55,13 @@ const App = () => {
               </Fade>
             </Container>
                    
-                   <Slide bottom duration={5000}>
+                   <Slide bottom duration={3000}>
                       
                         <Skills />
                       
                     </Slide>
         
-        {/*<div style={{ height: '200px' }} />*/}
+        {<div style={{ height: '200px' }} />}
     </Parallax>
 
 
