@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300");
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
 
 .about {
   font-size: 1.1em;
@@ -12,20 +26,31 @@
     0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 .glow1 {
+  
   box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
     0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
-.profile {
+.glow2 {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+    0 0 25px #0073e5, 0 0 5px #1be600, 0 0 5px #1be600;
+
+}
+.glow3{
+box-shadow:  0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+  0 0 5px #82e600, 0 0 5px #00e645, 0 0 5px #36e600
+}
+.profile{
   max-width: 20rem;
-  border-radius: 10%;
+  border-radius: 90%;
+
+}
+.profile:hover{
+  transform: rotate(360deg) translate(0%, 0%) scale(1.1);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  box-shadow: rgba(243, 243, 255, 0.1) 10px 18px 24px, rgba(242, 242, 255, 0.1) 10px 16px 56px, rgba(240, 240, 255, 0.1) 10px 24px 80px;
 }
 
-.hr {
-  border-color: grey;
-  border-style: none none dotted;
-  border-width: 10px;
-  width: 60%;
-}
+ 
 
 .font-details {
   font-size: 3em;
@@ -35,5 +60,38 @@
 .font-details-b {
   font-size: 3em;
   font-weight: 500;
-  color: #ffffff;
+  color: #141313;
+}
+
+/**/
+
+.space{
+  padding-top: 50px;
+}
+.extra1{
+  margin-top: 50px;
+}
+h4{
+  font-family: 'Bitter', serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+.title{
+  
+  font-family: 'Rock Salt', cursive;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+  0 0 5px #82e600, 0 0 5px #00e645, 0 0 5px #36e600
+}
+.title:hover{
+  transform: scale(1.2);
+}
+
+.bord {
+  border: 4px dotted #2D2424;
+}
+h2{
+  line-height : 1.5;
 }

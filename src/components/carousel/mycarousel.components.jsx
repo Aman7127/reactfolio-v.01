@@ -20,15 +20,15 @@ const MyCarousal = () => {
   return (
     <>
       <div id="home">
-        <Carousel controls={false} indicators interval={4000} pause={false}>
+        <Carousel controls={false} indicators interval={3000} pause={false}>
           <Carousel.Item>
-            <img className="d-block w-100 custom-img" src={Slide2} alt="second slide" />
+            <img className="d-block w-100 custom-img" src={Slide1} alt="second slide" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100 custom-img" src={Slide3} alt="Third slide" />
+            <img className="d-block w-100 custom-img" src={Slide2} alt="Third slide" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100 custom-img" src={Slide1} alt="first slide" />
+            <img className="d-block w-100 custom-img" src={Slide3} alt="first slide" />
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100 custom-img" src={Slide6} alt="fourth slide" />

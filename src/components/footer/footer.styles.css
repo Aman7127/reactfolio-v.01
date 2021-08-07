@@ -6,3 +6,7 @@
   border-top-left-radius: 3px;
   font-family: "Varela Round", sans-serif;
 }
+* {
+margin: 0;
+padding: 0;
+}

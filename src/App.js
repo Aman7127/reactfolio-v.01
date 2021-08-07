@@ -16,7 +16,8 @@ import Contact from "./pages/contact-form/contact-form.component";
 import FooterPanel from "./components/footer/footer.component";
 import Particles from 'react-particles-js';
 import { particlesOptions } from "./particleOptions";
-
+import background from "./assets/img/background/background.jpg";
+import sample from "./assets/img/background/sample.mp4";
 
 
 import "./App.css";
@@ -26,45 +27,89 @@ const App = () => {
   return (
     <div className="App" style={{ position: "relative" }}>
     <Mynavbar />
+    {/*<Particles
+        className="particles particles-box"
+        params={particlesOptions}
+        />*/} 
+    
      <Mycarousal />
      <TitleMessage />
      
-     {/*  <Particles
-        className="particles particles-box"
-        params={particlesOptions}
-        /> */}
+     
+       
        <div>
-      <Parallax strength={500}>
-        <Background >
-            <img src="https://images.unsplash.com/photo-1487174244970-cd18784bb4a4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1952&q=80" alt="bg-1" />
-            <hr></hr>
-        </Background>
-    
-            <Container className="container-box rounded">
+
+       <Parallax
+        /*blur={{ min: -5, max: 5 }}*/
+        bgImage={background}
+        bgImageAlt="parallax"
+        strength={850}
+    >
+          <Container className="container-box rounded">
               <Fade left>
                 <About />
               </Fade>
             </Container>
+                   
+                   <Slide bottom duration={5000}>
+                      
+                        <Skills />
+                      
+                    </Slide>
+        
+        {/*<div style={{ height: '200px' }} />*/}
+    </Parallax>
+
+
+     {/* <Parallax strength={600}>
+        <Background >
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=707&q=80" alt="bg-1" />
+            <hr></hr>
+        </Background>
+    
+           
             
           
-        </Parallax>
+        </Parallax>*/}
       </div>
       
-        <Slide bottom duration={500}>
-         
-          <Skills />
-        </Slide>
+ 
         <div>
+        
+     
         <Container className="container-box rounded">
-        <Slide bottom duration={500}>
+        
+        
+         <video autoPlay loop muted
+         style={{
+           position : "absolute",
+           width : "141%",
+           left : "46%",
+           top : "49%",
+           height : "105%",
+           objectFit : "cover",
+           transform : "translate(-50% , -50%)",
+           zIndex: "-1"
+
+         }}>
+         <source src={sample} type="video/mp4"/>
+          </video>
+          
                   <TimeLine />
-        </Slide>
-      </Container>
+        
+         
+
+        
+        
+       
+       
+        </Container>
       
-        <Flip left>
-          <hr />
+      
+        
+      
           <Contact/>
-        </Flip>
+        
      
         </div>
         <FooterPanel />

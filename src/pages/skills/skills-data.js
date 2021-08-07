@@ -28,8 +28,12 @@ import L_GOLANG from "../../assets/img/skills/go-6.svg";
 import L_PYTHON from "../../assets/img/skills/python.svg";
 import L_c from "../../assets/img/skills/c.svg";
 import L_netlify from "../../assets/img/skills/netlify.svg";
-import L_NPM from "../../assets/img/skills/npm.svg"
-
+import L_NPM from "../../assets/img/skills/npm.svg";
+import L_aws from "../../assets/icons/aws.png";
+import L_gcp from "../../assets/icons/gcp.png";
+import L_jira from "../../assets/icons/jira.png";
+import L_dynamo from "../../assets/icons/dynamo.png";
+import L_yarn from "../../assets/icons/yarn.png";
 
 const skillsdata = {
 
@@ -104,6 +108,20 @@ const skillsdata = {
           },
 
     ] ,
+       Cloudservice :[
+        {
+            imgAltText: "AWS",
+            imgSrc: L_aws,
+            skillName: "Amazon Web service",
+          },
+          {
+          
+            imgAltText: "gcp",
+            imgSrc: L_gcp,
+            skillName: "Google cloud platform",
+          },
+
+    ] ,
     hostingplatforms :[
         {
             link: "https://www.heroku.com/",
@@ -164,6 +182,12 @@ const skillsdata = {
                 imgSrc: L_MONGODB,
                 skillName: "MongoDB",
               },
+              {
+                imgAltText: "dynamo",
+                imgSrc: L_dynamo,
+                skillName: "DynamoDB",
+
+              }
 
           ] ,
     versioncontrol :[
@@ -182,6 +206,10 @@ const skillsdata = {
         skillName: "npm",
 
       },
+      {
+        imgSrc: L_yarn,
+        skillName: "Yarn",
+      }
     ]
 };
 

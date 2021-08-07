@@ -8,11 +8,11 @@ import styled from "styled-components";
 
 
 const MyTitleMessage = styled.h1`
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 22rem;
+  top: -18rem;
   z-index: 1;
-  margin-top: -125px;
+  margin-top: -260px;
   text-align: center;
   strong {
     font-size: 2em;
@@ -50,10 +50,10 @@ const TitleMessage = () => (
           <div className="sub">
             <Typewriter
               options={{
-                strings: ["Web Developer", "Gamer", "Sports Enthusiast","Anime lover"],
+                strings: ["Software Engineer","Blockchain connoisseur","Gamer", "Sports Enthusiast",],
                 autoStart: true,
                 loop: true,
-                delay: 50
+                delay: 70
               }}
             />
           </div>

@@ -10,7 +10,7 @@ const Mynavbar = () => {
     return(
         <>
         
-        <Navbar style={navbar} sticky="top" fixed="top" collapseOnSelect expand="sm" variant="dark">
+        <Navbar style={navbar} sticky="top" /*fixed="top"*/ collapseOnSelect expand="sm" variant="dark">
   <Navbar.Brand href="#home"><strong>My portfolio</strong> </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
